@@ -1,0 +1,270 @@
+/* Formato para todas las paginas */
+* {
+  margin: 0;
+
+}
+@font-face {
+  font-family: FE-Font;
+  src: url(./Respaldo/Fonts/FE-FONT.TTF);
+ }
+@font-face {
+  font-family: Rasic-Life;
+  src: url(./Respaldo/Fonts/rasic_life/Rasic-Life.ttf);
+}
+@font-face {
+  font-family: Bruno-ace;
+  src: url(./Respaldo/Fonts/BrunoAceSC-Regular.ttf);
+}
+@font-face {
+  font-family: Dosis;
+  src: url(./Respaldo/Fonts/Dosis/Dosis-VariableFont_wght.ttf);
+}
+ h1 {font-family: 'FE-Font', sans-serif;font-size:xx-large;
+    color:rgb(208, 11, 11);text-align: center;display: block; padding: 15px;}
+ html{background: rgb(0,36,17);
+  background: linear-gradient(0deg, rgba(0,36,17,0.5690870098039216) 12%, rgba(6,184,235,0.7959777661064426) 88%) fixed;
+   min-height: 100%;
+  }
+
+/* Formato menu de navegacion */
+header{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bruno-ace';
+  align-items: center;
+  background-color: rgb(183, 149, 145);
+  margin: 15px;
+}
+.navigationBar{
+  width: 50%;
+}
+nav ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+ a:link {
+  color:black;
+  text-decoration: none;
+  }
+ a:visited {
+  color:black; 
+  text-decoration:none;
+}
+ a:hover {
+  text-decoration: underline; 
+  color: black; 
+  background-color: whitesmoke; 
+  border-top: solid 7px red;
+  border-right: solid 12px black;
+  border-bottom: solid 7px red;
+  border-left: solid 12px black;
+}
+ a:active {
+  text-decoration: underline;
+  color: black;
+}
+ 
+ .top {height: 80px; width: 80px; padding: 6px; margin-left: 8px;margin-left: 15px;}
+ body {font-family: 'Dosis', sans-serif;}
+
+ /* Formato INDEX (HOME) */
+ .roles {font-family: 'Rasic-Life', sans-serif;text-align: center;}
+ #selfie {display: block;margin-left: auto;margin-right: auto;padding: 5px;margin-bottom: 25px;}
+ .presentacion{
+  display: grid;
+  grid-template-areas:
+  "h1"
+  "roles"
+  "img";
+  row-gap: 30px;
+  border: 3px;
+  border-style: double;
+  border-color: blue;
+  margin: 35px;
+  padding: 15px;
+  gap: 15px;
+ }
+ .pieDepagina {margin-left: 30px; font-size: 20px;}
+
+ /* Formato ABOUT  */
+ section {margin-left: 30px; margin-right: 30px;}
+ 
+ #grilla-about{
+  display: grid;
+  grid-template-areas:
+  "encabezado encabezado"
+  "about-ing about-esp"
+  "texto-ing texto-esp"
+  "videogd videojeff" ;
+  grid-template-columns: 50% 50%;
+  border: 3px;
+  border-style: double;
+  border-color: blue;
+  margin: 35px;
+  padding: 15px;
+  row-gap: 10px;
+  }
+
+  section article p {font-size: 20px;}
+
+  /* Inicio Areas para el grid template About */
+  .nombre-h1{grid-area: encabezado;}
+  .about-ingles{grid-area: about-ing;}
+  .about-espanol{grid-area:about-esp;}
+  .texto-ingles{grid-area: texto-ing;}
+  .texto-espanol{grid-area:texto-esp;}
+  .videogd{grid-area: videogd;}
+  .videoJeff{grid-area: videojeff;}
+ /* Fin Areas para el grid template About */
+ 
+ .about__video{
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  padding: 30px;
+ }
+
+  /* Formato SERVICES */
+
+ strong{text-decoration: underline;}
+ main{margin: 50p;
+}
+.tech_logos{
+  height: 80px;
+  width: 80px;
+}
+
+.grilla-services{
+  display: grid;
+  grid-template-areas:
+  "encabezado encabezado"
+  "svcs-ing svcs-esp"
+  "svcs-txt-ing svcs-txt-esp"
+  "techs techs";
+  grid-template-columns: 50% 50%;
+  border: 3px;
+  border-style: double;
+  border-color: blue;
+  margin: 35px;
+  padding: 15px;
+  gap: 15px;
+  }
+
+  /* Inicio Areas para el grid template Services */
+  .nombre-h1{grid-area: encabezado;}
+  .services-ingles{grid-area: svcs-ing;}
+  .services-texto-ingles{grid-area: svcs-txt-ing;}
+  .services-esp{grid-area: svcs-esp;}
+  .services-texto-esp{grid-area: svcs-txt-esp;}
+  .skills_logos{grid-area: techs;}
+  /* Fin Areas para grid Services */
+ 
+    .skills_logos{
+    display: flex;
+    justify-content:space-around;
+    }
+
+    /* Formato para tab EXPERIENCES */
+    .grilla-experience{
+    display: grid;
+    grid-template-areas:
+    "encabezado encabezado"
+    "exp-ing exp-esp"
+    "exp-txt-ing exp-txt-esp";
+    grid-template-columns: 50% 50%;
+    border: 3px;
+    border-style: double;
+    border-color: blue;
+    margin: 35px;
+    padding: 15px;
+    gap: 15px;
+  }
+
+  /* Inicio Areas para el grid template Experiences */
+  .nombre-h1{grid-area: encabezado;}
+  .exp-ing{grid-area: exp-ing;}
+  .exp-txt-ing{grid-area: exp-txt-ing;}
+  .exp-esp{grid-area: exp-esp;}
+  .exp-txt-esp{grid-area: exp-txt-esp;}
+  /* Fin Areas para grid Services */
+
+  .emoji-bullet::before{
+    content: "👨🏼‍💻";
+  }
+
+  /* FORMATO CONTACT */
+  .grilla-contact{
+    display: grid;
+    grid-template-areas:
+    "encabezado encabezado"
+    "contact-eng none"
+    "contact-esp none"
+    "contact-chart none";
+    grid-template-columns: 50% 50%;
+    border: 3px;
+    border-style: double;
+    border-color: blue;
+    margin: 35px;
+    padding: 15px;
+    gap: 25px;
+  }
+
+  /* Inicio Areas para el grid template Contact */
+  .nombre-h1{grid-area: encabezado;}
+  .contact-eng{grid-area: contact-eng;font-size: 20px;}
+  .contact-esp{grid-area: contact-esp;font-size: 20px;}
+  .chart-a-completar{grid-area: contact-chart;font-size: 20px}
+  /* Fin Areas para el grid template Contact */
+
+  .form{
+    display: block;
+   }
+    input:focus{
+    background-color: rgb(24, 142, 24);
+    color: white;
+    font-weight: 300;
+   }
+   option:checked{
+    border:double red 2px;
+   }
+   textarea:focus{
+    background-color: rgb(24, 142, 24);
+    color: white;
+    font-weight: 300;
+   }
+
+   .botones{
+    background-color: coral;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+   }
+   .botones:hover{
+    background-color: black;
+    color: whitesmoke;
+    border: double palegreen 2px;
+    font-weight: 500;
+    cursor: pointer;
+   }
+
+  
+
+ /*FORMATO FOOTER  */
+ footer {
+    background-color: aquamarine;
+    text-align: center;
+    text-justify: auto;
+    /* position:fixed; */
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    padding: 3px;
+    margin-top: 20px;
+  }
+
